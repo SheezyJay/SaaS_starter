@@ -46,6 +46,18 @@ TENANT_TYPES = {
                   ],
         "URLCONF": "configs.urls.public", # url for the public type here
     },
+    "clients": {  # this is the name of the public schema from get_public_schema_name
+        "APPS": ['django_tenants',
+                 'django.contrib.admin',
+                 'django.contrib.auth',
+                 'django.contrib.contenttypes',
+                 'django.contrib.sessions',
+                 'django.contrib.messages',
+                 'django.contrib.staticfiles',
+                  'apps._client',
+                  ],
+        "URLCONF": "configs.urls.clients", # url for the public type here
+    },
    
 }
 INSTALLED_APPS = []
