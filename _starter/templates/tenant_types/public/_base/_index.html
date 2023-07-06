@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %}</title>
+    {% load static %}
+   
+   
+    <link href="{% static 'custom/landing/landing.css' %}" rel="stylesheet">
+    <link href="{% static 'global/bootstrap.min.css' %}" rel="stylesheet">
+    <integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <!--START:NAVBAR-->
+    {% include 'tenant_types/public/_base/components/navbar.html' %}
+    <!--END:NAVBAR-->
+
+
+
+    <!--START:MAIN-->
+    <main role="main" class="container">
+      <!--START:CONTENT-->
+      {% block content %}
+      {% endblock content %}
+      <!--START:CONTENT-->
+    </main>
+    <!--END:MAIN-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+
+</body>
+ 
+</html>
+
