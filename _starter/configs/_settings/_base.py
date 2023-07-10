@@ -104,9 +104,9 @@ DATABASES = {
     'default': {
        
             'ENGINE': 'django_tenants.postgresql_backend',
-            'NAME':  'SaaSstarter',
-            'USER': 'johannes',
-            'PASSWORD': 'postgres',
+            'NAME':  '',
+            'USER': '',
+            'PASSWORD': '',
             'HOST': 'localhost',
             'PORT': '5432',
         # ..
